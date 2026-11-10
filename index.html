@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -63,6 +63,7 @@ transition:.3s;
 .btn:hover{transform:scale(1.04)}
 .youtube{background:#e60000;color:#fff}
 .whatsapp{background:#16c765;color:#fff}
+.grupo{background:#087fce;color:#fff}
 
 .section-title{
 color:#ffd447;
@@ -149,6 +150,26 @@ text-align:center;
 .cta h2{color:#48ed91;margin-bottom:13px}
 .cta p{color:#ddd;margin-bottom:18px;line-height:1.5}
 
+/* BOTÕES LADO A LADO */
+.botoes-whatsapp{
+display:flex;
+justify-content:center;
+align-items:stretch;
+gap:12px;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+.botoes-whatsapp .btn{
+flex:1;
+max-width:280px;
+min-width:220px;
+margin:0;
+padding:16px 12px;
+text-align:center;
+line-height:1.4;
+}
+
 footer{
 margin-top:35px;
 background:#101827;
@@ -159,7 +180,7 @@ font-size:12px;
 line-height:1.8;
 }
 
-/* Notificações */
+/* NOTIFICAÇÕES */
 #notificacao{
 position:fixed;
 bottom:20px;
@@ -204,7 +225,23 @@ to{opacity:1;transform:translateY(0)}
 .logo{font-size:25px}
 .hero h1{font-size:24px}
 .section-title{font-size:22px}
-#notificacao{left:10px;bottom:12px;width:calc(100% - 20px)}
+
+#notificacao{
+left:10px;
+bottom:12px;
+width:calc(100% - 20px);
+}
+
+.botoes-whatsapp{
+gap:9px;
+}
+
+.botoes-whatsapp .btn{
+min-width:0;
+width:calc(50% - 5px);
+font-size:12px;
+padding:14px 7px;
+}
 }
 </style>
 </head>
@@ -228,7 +265,7 @@ demonstrativas e fique por dentro das novidades.
 
 <a class="btn youtube"
 href="https://www.youtube.com/@ViviJB2.0"
-target="_blank" rel="noopener">
+target="_blank" rel="noopener noreferrer">
 ▶ ACESSAR CANAL NO YOUTUBE
 </a>
 </section>
@@ -274,23 +311,34 @@ Novas combinações demonstrativas a cada 12 horas
 </div>
 
 <p class="aviso">
-Os palpites são atualizados periodicamente de acordo com as analises da ViviJB.
+Os palpites são atualizados periodicamente de acordo com as análises da Vivi JB.
 Apostas envolvem riscos financeiros. Jogue com responsabilidade.
 </p>
 
 <section class="cta">
-<h2>💚 VENHA SER MEU CLIENTE!</h2>
+
+<h2>💚 FIQUE CONECTADO COM A VIVI JB!</h2>
 
 <p>
-Quer conhecer melhor o trabalho da Vivi JB?
-Entre em contato diretamente pelo WhatsApp.
+Escolha abaixo como deseja participar.
+Entre em contato para conhecer nosso trabalho ou faça parte do grupo oficial.
 </p>
+
+<div class="botoes-whatsapp">
 
 <a class="btn whatsapp"
 href="https://wa.me/5583993523067?text=vim%20pelo%20site%20do%20youtube%2C%20pode%20me%20ajudar%3F"
-target="_blank" rel="noopener">
-📲 VENHA SER MEU CLIENTE
+target="_blank" rel="noopener noreferrer">
+📲 QUER SER MEU CLIENTE? CLIQUE AQUI
 </a>
+
+<a class="btn grupo"
+href="https://chat.whatsapp.com/CaY60otbPRkEJL0n5Hhnvm"
+target="_blank" rel="noopener noreferrer">
+💚 ENTRE NO GRUPO DO WHATSAPP
+</a>
+
+</div>
 </section>
 
 </main>
@@ -420,7 +468,7 @@ texto:"Confira as combinações de centena disponíveis no painel da Vivi JB!"
 },
 {
 titulo:"🔢 DEZENA",
-texto:"Novas combinações de dezena estão disponíveis para você conferir!"
+texto:"Novas combinações demonstrativas de dezena estão disponíveis para você conferir!"
 },
 {
 titulo:"🏆 MILHAR",
@@ -465,3 +513,4 @@ setInterval(mostrarNotificacao,30000);
 
 </body>
 </html>
+```
