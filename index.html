@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -6,242 +6,358 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#080b13">
 
-<title>Vivi JB 2.0 | Palpites</title>
+<title>Vivi JB 2.0 | Palpites e Combinações</title>
 
-<meta name="description" content="Acompanhe a Vivi JB 2.0 no YouTube e confira combinações demonstrativas.">
+<meta name="description" content="Acompanhe a Vivi JB 2.0, escolha sua modalidade e confira combinações demonstrativas atualizadas.">
 
 <link rel="canonical" href="https://vivijb.site/">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-
-body{
-font-family:Arial,sans-serif;
-background:#080b13;
-color:#fff;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header{
-background:#101827;
-padding:22px 15px;
-text-align:center;
-border-bottom:2px solid #e5b923;
+body {
+    font-family: Arial, sans-serif;
+    background: #080b13;
+    color: #fff;
+    min-height: 100vh;
 }
 
-.logo{
-font-size:30px;
-font-weight:bold;
-color:#ffd447;
+header {
+    background: #101827;
+    padding: 23px 15px;
+    text-align: center;
+    border-bottom: 2px solid #e5b923;
 }
 
-header p{color:#bbb;margin-top:7px;font-size:14px}
-
-.container{max-width:1100px;margin:auto;padding:18px}
-
-.hero{
-margin-top:20px;
-padding:38px 18px;
-text-align:center;
-background:linear-gradient(135deg,#18243b,#33250c);
-border:1px solid #c99b25;
-border-radius:15px;
+.logo {
+    font-size: 29px;
+    font-weight: bold;
+    color: #ffd447;
+    letter-spacing: 1px;
 }
 
-.hero h1{font-size:30px;color:#ffd447;margin-bottom:12px}
-.hero p{color:#ddd;line-height:1.6;margin-bottom:22px}
-
-.btn{
-display:inline-block;
-padding:15px 22px;
-border-radius:8px;
-text-decoration:none;
-font-weight:bold;
-margin:5px;
-transition:.3s;
+header p {
+    color: #aaa;
+    margin-top: 8px;
+    font-size: 14px;
 }
 
-.btn:hover{transform:scale(1.04)}
-.youtube{background:#e60000;color:#fff}
-.whatsapp{background:#16c765;color:#fff}
-.grupo{background:#087fce;color:#fff}
-
-.section-title{
-color:#ffd447;
-font-size:25px;
-text-align:center;
-margin:35px 0 10px;
+.container {
+    max-width: 950px;
+    margin: auto;
+    padding: 20px;
 }
 
-.section-subtitle{
-text-align:center;
-color:#aaa;
-font-size:13px;
-margin-bottom:22px;
+/* APRESENTAÇÃO */
+
+.hero {
+    margin-top: 15px;
+    padding: 40px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #18243b, #33250c);
+    border: 1px solid #c99b25;
+    border-radius: 16px;
 }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
-gap:14px;
+.hero h1 {
+    font-size: 29px;
+    color: #ffd447;
+    margin-bottom: 14px;
 }
 
-.palpite-card{
-background:linear-gradient(145deg,#17243a,#101522);
-border:1px solid #55451e;
-border-radius:12px;
-padding:19px;
+.hero p {
+    color: #ddd;
+    line-height: 1.7;
+    max-width: 620px;
+    margin: auto auto 22px;
 }
 
-.palpite-card h3{
-color:#ffd447;
-text-align:center;
-margin-bottom:15px;
-font-size:18px;
+.btn {
+    display: inline-block;
+    padding: 15px 23px;
+    border-radius: 9px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
 }
 
-.numero{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:9px 10px;
-margin:7px 0;
-background:#0c1422;
-border-radius:7px;
-border:1px solid #29364a;
+.btn:hover {
+    transform: translateY(-3px);
 }
 
-.numero strong{
-font-size:19px;
-color:#35df8a;
-letter-spacing:1px;
+.youtube {
+    background: #e60000;
+    color: white;
 }
 
-.numero span{font-size:12px;color:#bbb}
+/* PAINEL */
 
-.animal{
-color:#ffd447!important;
-font-size:13px!important;
+.painel {
+    margin-top: 35px;
+    padding: 25px;
+    background: linear-gradient(145deg, #121d30, #0e1522);
+    border: 1px solid #51431f;
+    border-radius: 16px;
 }
 
-.timer{
-text-align:center;
-color:#bbb;
-font-size:13px;
-margin-top:20px;
+.titulo-painel {
+    text-align: center;
+    color: #ffd447;
+    font-size: 25px;
+    margin-bottom: 9px;
 }
 
-.aviso{
-text-align:center;
-font-size:12px;
-color:#999;
-line-height:1.6;
-margin:18px 0;
+.subtitulo {
+    text-align: center;
+    color: #aaa;
+    font-size: 13px;
+    margin-bottom: 25px;
 }
 
-.cta{
-margin-top:35px;
-padding:35px 18px;
-background:linear-gradient(135deg,#173a2a,#102b20);
-border:1px solid #16c765;
-border-radius:15px;
-text-align:center;
+/* SELETOR */
+
+.seletor-label {
+    display: block;
+    color: #ffd447;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 14px;
 }
 
-.cta h2{color:#48ed91;margin-bottom:13px}
-.cta p{color:#ddd;margin-bottom:18px;line-height:1.5}
-
-/* BOTÕES LADO A LADO */
-.botoes-whatsapp{
-display:flex;
-justify-content:center;
-align-items:stretch;
-gap:12px;
-flex-wrap:wrap;
-margin-top:20px;
+select {
+    width: 100%;
+    padding: 16px;
+    border-radius: 9px;
+    border: 1px solid #a88732;
+    background: #0b1423;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
 }
 
-.botoes-whatsapp .btn{
-flex:1;
-max-width:280px;
-min-width:220px;
-margin:0;
-padding:16px 12px;
-text-align:center;
-line-height:1.4;
+select:focus {
+    border-color: #ffd447;
 }
 
-footer{
-margin-top:35px;
-background:#101827;
-padding:25px;
-text-align:center;
-color:#999;
-font-size:12px;
-line-height:1.8;
+/* RESULTADOS */
+
+.resultado {
+    margin-top: 22px;
+    padding: 20px;
+    background: #0b1422;
+    border: 1px solid #293b52;
+    border-radius: 12px;
 }
 
-/* NOTIFICAÇÕES */
-#notificacao{
-position:fixed;
-bottom:20px;
-left:20px;
-width:calc(100% - 40px);
-max-width:340px;
-background:#142337;
-border:1px solid #d5aa36;
-border-radius:12px;
-padding:15px;
-box-shadow:0 5px 25px #0009;
-z-index:999;
-display:none;
-animation:entrada .4s ease;
+.resultado h3 {
+    text-align: center;
+    color: #ffd447;
+    font-size: 20px;
+    margin-bottom: 18px;
 }
 
-#notificacao strong{
-color:#ffd447;
-display:block;
-margin-bottom:7px;
+.lista {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 11px;
 }
 
-#notificacao p{
-color:#eee;
-font-size:13px;
-line-height:1.5;
+.numero {
+    background: linear-gradient(135deg, #17263b, #111b2a);
+    border: 1px solid #33445a;
+    padding: 16px 10px;
+    border-radius: 9px;
+    text-align: center;
 }
 
-#notificacao small{
-display:block;
-color:#aaa;
-margin-top:8px;
-font-size:10px;
+.numero strong {
+    display: block;
+    font-size: 25px;
+    color: #35df8a;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
 }
 
-@keyframes entrada{
-from{opacity:0;transform:translateY(20px)}
-to{opacity:1;transform:translateY(0)}
+.numero span {
+    font-size: 11px;
+    color: #aaa;
+    text-transform: uppercase;
 }
 
-@media(max-width:600px){
-.logo{font-size:25px}
-.hero h1{font-size:24px}
-.section-title{font-size:22px}
-
-#notificacao{
-left:10px;
-bottom:12px;
-width:calc(100% - 20px);
+.atualizacao {
+    margin-top: 20px;
+    text-align: center;
+    color: #bbb;
+    font-size: 13px;
+    line-height: 1.7;
 }
 
-.botoes-whatsapp{
-gap:9px;
+.atualizacao strong {
+    color: #ffd447;
+    font-size: 17px;
 }
 
-.botoes-whatsapp .btn{
-min-width:0;
-width:calc(50% - 5px);
-font-size:12px;
-padding:14px 7px;
+.status {
+    display: inline-block;
+    color: #35df8a;
+    background: #123426;
+    border: 1px solid #236a48;
+    border-radius: 30px;
+    padding: 6px 12px;
+    font-size: 11px;
+    margin-top: 15px;
 }
+
+/* AVISO */
+
+.aviso {
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+    line-height: 1.7;
+    margin: 25px 5px;
+}
+
+/* GRUPO */
+
+.grupo {
+    margin-top: 30px;
+    padding: 27px 18px;
+    text-align: center;
+    background: linear-gradient(135deg, #173a2a, #102b20);
+    border: 1px solid #16c765;
+    border-radius: 15px;
+}
+
+.grupo h2 {
+    color: #48ed91;
+    margin-bottom: 12px;
+    font-size: 21px;
+}
+
+.grupo p {
+    color: #ddd;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.btn-grupo {
+    background: #087fce;
+    color: white;
+}
+
+/* WHATSAPP FLUTUANTE */
+
+.whatsapp-float {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 9999;
+    width: 62px;
+    height: 62px;
+    background: #16c765;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 4px 18px #0009;
+    transition: .3s;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-float svg {
+    width: 34px;
+    height: 34px;
+    fill: white;
+}
+
+.whatsapp-tooltip {
+    position: absolute;
+    right: 72px;
+    background: #142337;
+    color: white;
+    padding: 10px 13px;
+    border-radius: 7px;
+    font-size: 12px;
+    white-space: nowrap;
+    border: 1px solid #16c765;
+}
+
+/* RODAPÉ */
+
+footer {
+    margin-top: 35px;
+    background: #101827;
+    padding: 25px 15px;
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+footer strong {
+    color: #ffd447;
+}
+
+@media(max-width:600px) {
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .hero {
+        padding: 30px 16px;
+    }
+
+    .hero h1 {
+        font-size: 23px;
+    }
+
+    .titulo-painel {
+        font-size: 21px;
+    }
+
+    .container {
+        padding: 13px;
+    }
+
+    .painel {
+        padding: 17px 13px;
+    }
+
+    .lista {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .numero {
+        padding: 14px 5px;
+    }
+
+    .numero strong {
+        font-size: 22px;
+    }
+
+    .whatsapp-float {
+        width: 57px;
+        height: 57px;
+        right: 15px;
+        bottom: 15px;
+    }
+
+    .whatsapp-tooltip {
+        display: none;
+    }
 }
 </style>
 </head>
@@ -249,268 +365,345 @@ padding:14px 7px;
 <body>
 
 <header>
-<div class="logo">⭐ VIVI JB 2.0 ⭐</div>
-<p>Palpites, novidades e conteúdos exclusivos</p>
+    <div class="logo">⭐ VIVI JB 2.0 ⭐</div>
+    <p>Palpites, novidades e conteúdos exclusivos</p>
 </header>
 
 <main class="container">
 
-<section class="hero">
-<h1>Bem-vindo à Vivi JB 2.0!</h1>
+    <section class="hero">
 
-<p>
-Acompanhe nosso canal oficial, confira as combinações
-demonstrativas e fique por dentro das novidades.
-</p>
+        <h1>Bem-vindo à Vivi JB 2.0!</h1>
 
-<a class="btn youtube"
-href="https://www.youtube.com/@ViviJB2.0"
-target="_blank" rel="noopener noreferrer">
-▶ ACESSAR CANAL NO YOUTUBE
-</a>
-</section>
+        <p>
+            Acompanhe nosso canal oficial, escolha sua modalidade
+            favorita e confira as combinações demonstrativas
+            disponíveis em nosso painel.
+        </p>
 
-<h2 class="section-title">🎯 PAINEL DE PALPITES</h2>
+        <a class="btn youtube"
+           href="https://www.youtube.com/@ViviJB2.0"
+           target="_blank"
+           rel="noopener noreferrer">
+           ▶ ACESSAR CANAL NO YOUTUBE
+        </a>
 
-<p class="section-subtitle">
-Novas combinações demonstrativas a cada 12 horas
-</p>
+    </section>
 
-<div class="grid">
+    <!-- PAINEL DE PALPITES -->
 
-<div class="palpite-card">
-<h3>🔢 5 DEZENAS</h3>
-<div id="dezenas"></div>
-</div>
+    <section class="painel">
 
-<div class="palpite-card">
-<h3>💯 5 CENTENAS</h3>
-<div id="centenas"></div>
-</div>
+        <h2 class="titulo-painel">
+            🎯 PAINEL DE PALPITES
+        </h2>
 
-<div class="palpite-card">
-<h3>🏆 5 MILHARES</h3>
-<div id="milhares"></div>
-</div>
+        <p class="subtitulo">
+            Escolha uma modalidade para visualizar as combinações
+        </p>
 
-<div class="palpite-card">
-<h3>🐂 5 GRUPOS</h3>
-<div id="grupos"></div>
-</div>
+        <label class="seletor-label" for="modalidade">
+            ESCOLHA SUA MODALIDADE:
+        </label>
 
-<div class="palpite-card">
-<h3>🔥 5 DUQUES</h3>
-<div id="duques"></div>
-</div>
+        <select id="modalidade">
+            <option value="dezenas">🔢 Dezenas</option>
+            <option value="centenas">💯 Centenas</option>
+            <option value="milhares">🏆 Milhares</option>
+            <option value="grupos">🐂 Grupos</option>
+            <option value="duques">🔥 Duques</option>
+        </select>
 
-</div>
+        <div class="resultado">
 
-<div class="timer">
-🕒 Próxima atualização em:
-<strong id="contador">12:00:00</strong>
-</div>
+            <h3 id="tituloResultado">
+                🔢 5 DEZENAS
+            </h3>
 
-<p class="aviso">
-Os palpites são atualizados periodicamente de acordo com as análises da Vivi JB.
-Apostas envolvem riscos financeiros. Jogue com responsabilidade.
-</p>
+            <div class="lista" id="listaPalpites"></div>
 
-<section class="cta">
+        </div>
 
-<h2>💚 FIQUE CONECTADO COM A VIVI JB!</h2>
+        <div class="atualizacao">
 
-<p>
-Escolha abaixo como deseja participar.
-Entre em contato para conhecer nosso trabalho ou faça parte do grupo oficial.
-</p>
+            🕒 Próxima atualização em:
 
-<div class="botoes-whatsapp">
+            <br>
 
-<a class="btn whatsapp"
-href="https://wa.me/5583993523067?text=vim%20pelo%20site%20do%20youtube%2C%20pode%20me%20ajudar%3F"
-target="_blank" rel="noopener noreferrer">
-📲 QUER SER MEU CLIENTE? CLIQUE AQUI
-</a>
+            <strong id="contador">12:00:00</strong>
 
-<a class="btn grupo"
-href="https://chat.whatsapp.com/DQN9GtAExyv9AR2IqGXFHO"
-target="_blank" rel="noopener noreferrer">
-💚 ENTRE NO GRUPO DO WHATSAPP
-</a>
+            <br>
 
-</div>
-</section>
+            <span class="status">
+                ● PAINEL AUTOMÁTICO
+            </span>
+
+        </div>
+
+    </section>
+
+    <p class="aviso">
+        As combinações apresentadas são geradas automaticamente
+        e possuem caráter exclusivamente demonstrativo.
+        Não representam previsões ou garantia de resultados.
+        Apostas envolvem riscos financeiros. Jogue com responsabilidade.
+    </p>
+
+    <!-- GRUPO OFICIAL -->
+
+    <section class="grupo">
+
+        <h2>💚 FIQUE CONECTADO COM A VIVI JB!</h2>
+
+        <p>
+            Faça parte do nosso grupo oficial e acompanhe
+            as novidades e conteúdos da Vivi JB 2.0.
+        </p>
+
+        <a class="btn btn-grupo"
+           href="https://chat.whatsapp.com/DQN9GtAExyv9AR2IqGXFHO"
+           target="_blank"
+           rel="noopener noreferrer">
+
+           💚 ENTRAR NO GRUPO OFICIAL
+
+        </a>
+
+    </section>
 
 </main>
 
 <footer>
-<strong>VIVI JB 2.0</strong><br>
-© 2026 - Todos os direitos reservados.<br>
-Conteúdo demonstrativo e de entretenimento.
+
+    <strong>VIVI JB 2.0</strong>
+
+    <br>
+
+    © 2026 - Todos os direitos reservados.
+
+    <br>
+
+    Conteúdo demonstrativo e de entretenimento.
+
 </footer>
 
-<div id="notificacao">
-<strong id="tituloNotificacao">🔔 Atualização</strong>
-<p id="textoNotificacao"></p>
-<small>Mensagem automática demonstrativa</small>
-</div>
+<!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+
+<a class="whatsapp-float"
+   href="https://wa.me/5583993523067?text=Vim%20pelo%20site%20da%20Vivi%20JB%202.0%2C%20pode%20me%20ajudar%3F"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Entrar em contato pelo WhatsApp">
+
+    <span class="whatsapp-tooltip">
+        Fale com a Vivi JB!
+    </span>
+
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M16 .5C7.45.5.5 7.4.5 15.95c0 2.75.72 5.44 2.08 7.83L.5 31.5l7.9-2.07a15.5 15.5 0 0 0 7.6 1.98h.01c8.55 0 15.49-6.95 15.49-15.5A15.4 15.4 0 0 0 16 .5zm0 28.3a12.8 12.8 0 0 1-6.52-1.78l-.47-.28-4.68 1.23 1.25-4.56-.3-.47a12.78 12.78 0 1 1 10.72 5.86zm7.02-9.57c-.38-.19-2.24-1.1-2.59-1.22-.35-.13-.6-.19-.85.19-.25.38-.98 1.22-1.2 1.47-.22.25-.44.28-.82.09-.38-.19-1.61-.59-3.07-1.9-1.13-1.01-1.9-2.25-2.12-2.63-.22-.38-.02-.58.17-.77.17-.17.38-.44.57-.66.19-.22.25-.38.38-.63.13-.25.06-.47-.03-.66-.09-.19-.85-2.05-1.17-2.81-.31-.74-.63-.64-.85-.65h-.73c-.25 0-.66.09-1 .47-.35.38-1.32 1.29-1.32 3.14s1.35 3.65 1.54 3.9c.19.25 2.66 4.06 6.45 5.7.9.39 1.61.62 2.16.79.91.29 1.74.25 2.39.15.73-.11 2.24-.91 2.56-1.79.32-.88.32-1.63.22-1.79-.09-.16-.35-.25-.73-.44z"/>
+    </svg>
+
+</a>
 
 <script>
 
-// Animais e grupos tradicionais
-const animais=[
-"AVESTRUZ","ÁGUIA","BURRO","BORBOLETA","CACHORRO",
-"CABRA","CARNEIRO","CAMELO","COBRA","COELHO",
-"CAVALO","ELEFANTE","GALO","GATO","JACARÉ",
-"LEÃO","MACACO","PORCO","PAVÃO","PERU",
-"TOURO","TIGRE","URSO","VEADO","VACA"
+// ANIMAIS E GRUPOS
+
+const animais = [
+    "AVESTRUZ","ÁGUIA","BURRO","BORBOLETA","CACHORRO",
+    "CABRA","CARNEIRO","CAMELO","COBRA","COELHO",
+    "CAVALO","ELEFANTE","GALO","GATO","JACARÉ",
+    "LEÃO","MACACO","PORCO","PAVÃO","PERU",
+    "TOURO","TIGRE","URSO","VEADO","VACA"
 ];
 
-// Gerador aleatório com semente por período de 12 horas
-const periodo=Math.floor(Date.now()/43200000);
-let seed=periodo+20261106;
+// GERADOR AUTOMÁTICO POR PERÍODO DE 12 HORAS
 
-function aleatorio(max){
-seed=(seed*9301+49297)%233280;
-return Math.floor((seed/233280)*max);
+const DURACAO = 43200000;
+
+function obterSemente() {
+    return Math.floor(Date.now() / DURACAO) + 20261106;
 }
 
-function numero(tamanho){
-return String(aleatorio(Math.pow(10,tamanho)))
-.padStart(tamanho,"0");
+function criarGerador(sementeInicial) {
+
+    let seed = sementeInicial;
+
+    return function(max) {
+
+        seed = (seed * 9301 + 49297) % 233280;
+
+        return Math.floor((seed / 233280) * max);
+
+    };
 }
 
-function criarLinha(valor,descricao=""){
-return `
-<div class="numero">
-<strong>${valor}</strong>
-<span>${descricao}</span>
-</div>`;
-}
+function numero(aleatorio, tamanho) {
 
-function gerarPalpites(){
-
-let dezenas=[];
-let centenas=[];
-let milhares=[];
-let grupos=[];
-let duques=[];
-
-for(let i=0;i<5;i++){
-dezenas.push(numero(2));
-centenas.push(numero(3));
-milhares.push(numero(4));
-
-let grupo=aleatorio(25);
-grupos.push(grupo);
-}
-
-for(let i=0;i<5;i++){
-let a=aleatorio(25);
-let b=aleatorio(25);
-while(a===b)b=aleatorio(25);
-duques.push([a,b]);
-}
-
-document.getElementById("dezenas").innerHTML=
-dezenas.map((n,i)=>criarLinha(n,"DEZENA "+(i+1))).join("");
-
-document.getElementById("centenas").innerHTML=
-centenas.map((n,i)=>criarLinha(n,"CENTENA "+(i+1))).join("");
-
-document.getElementById("milhares").innerHTML=
-milhares.map((n,i)=>criarLinha(n,"MILHAR "+(i+1))).join("");
-
-document.getElementById("grupos").innerHTML=
-grupos.map((g,i)=>criarLinha(
-String(g+1).padStart(2,"0"),
-animais[g]
-)).join("");
-
-document.getElementById("duques").innerHTML=
-duques.map((d,i)=>criarLinha(
-String(d[0]+1).padStart(2,"0")+" / "+
-String(d[1]+1).padStart(2,"0"),
-"DUQUE "+(i+1)
-)).join("");
+    return String(
+        aleatorio(Math.pow(10, tamanho))
+    ).padStart(tamanho, "0");
 
 }
 
-// Inicialização
-gerarPalpites();
+// GERAÇÃO DAS MODALIDADES
 
-// Contagem regressiva real de 12 horas
-function atualizarContador(){
-const restante=43200000-(Date.now()%43200000);
+function gerarPalpites() {
 
-const horas=Math.floor(restante/3600000);
-const minutos=Math.floor((restante%3600000)/60000);
-const segundos=Math.floor((restante%60000)/1000);
+    const aleatorio = criarGerador(obterSemente());
 
-document.getElementById("contador").textContent=
-String(horas).padStart(2,"0")+":"+
-String(minutos).padStart(2,"0")+":"+
-String(segundos).padStart(2,"0");
+    const dados = {
+        dezenas: [],
+        centenas: [],
+        milhares: [],
+        grupos: [],
+        duques: []
+    };
 
-if(restante<=1000){
-location.reload();
+    for (let i = 0; i < 5; i++) {
+
+        dados.dezenas.push(numero(aleatorio, 2));
+
+        dados.centenas.push(numero(aleatorio, 3));
+
+        dados.milhares.push(numero(aleatorio, 4));
+
+        dados.grupos.push(aleatorio(25));
+
+    }
+
+    for (let i = 0; i < 5; i++) {
+
+        const a = aleatorio(25);
+
+        let b = aleatorio(24);
+
+        if (b >= a) b++;
+
+        dados.duques.push([a, b]);
+
+    }
+
+    return dados;
+
 }
+
+// MOSTRAR MODALIDADE ESCOLHIDA
+
+const titulos = {
+    dezenas: "🔢 5 DEZENAS",
+    centenas: "💯 5 CENTENAS",
+    milhares: "🏆 5 MILHARES",
+    grupos: "🐂 5 GRUPOS",
+    duques: "🔥 5 DUQUES"
+};
+
+function exibirPalpites() {
+
+    const modalidade = document.getElementById("modalidade").value;
+
+    const dados = gerarPalpites();
+
+    const lista = document.getElementById("listaPalpites");
+
+    document.getElementById("tituloResultado").textContent =
+        titulos[modalidade];
+
+    let html = "";
+
+    dados[modalidade].forEach((item, index) => {
+
+        let valor = "";
+        let descricao = "";
+
+        if (modalidade === "grupos") {
+
+            valor = String(item + 1).padStart(2, "0");
+
+            descricao = animais[item];
+
+        }
+
+        else if (modalidade === "duques") {
+
+            valor =
+                String(item[0] + 1).padStart(2, "0") +
+                " / " +
+                String(item[1] + 1).padStart(2, "0");
+
+            descricao = "DUQUE " + (index + 1);
+
+        }
+
+        else {
+
+            valor = item;
+
+            descricao = modalidade.slice(0, -1).toUpperCase() +
+                " " + (index + 1);
+
+        }
+
+        html += `
+            <div class="numero">
+                <strong>${valor}</strong>
+                <span>${descricao}</span>
+            </div>
+        `;
+
+    });
+
+    lista.innerHTML = html;
+
 }
 
-setInterval(atualizarContador,1000);
+// TROCA AUTOMÁTICA DA MODALIDADE
+
+document.getElementById("modalidade").addEventListener(
+    "change",
+    exibirPalpites
+);
+
+// CONTADOR DE 12 HORAS
+
+function atualizarContador() {
+
+    const agora = Date.now();
+
+    const restante = DURACAO - (agora % DURACAO);
+
+    const horas = Math.floor(restante / 3600000);
+
+    const minutos = Math.floor(
+        (restante % 3600000) / 60000
+    );
+
+    const segundos = Math.floor(
+        (restante % 60000) / 1000
+    );
+
+    document.getElementById("contador").textContent =
+        String(horas).padStart(2, "0") + ":" +
+        String(minutos).padStart(2, "0") + ":" +
+        String(segundos).padStart(2, "0");
+
+    if (restante <= 1000) {
+
+        exibirPalpites();
+
+    }
+
+}
+
+// INICIALIZAÇÃO
+
+exibirPalpites();
+
 atualizarContador();
 
-// Notificações demonstrativas a cada 30 segundos
-const mensagens=[
-{
-titulo:"🎯 CENTENA",
-texto:"Confira as combinações de centena disponíveis no painel da Vivi JB!"
-},
-{
-titulo:"🔢 DEZENA",
-texto:"Novas combinações demonstrativas de dezena estão disponíveis para você conferir!"
-},
-{
-titulo:"🏆 MILHAR",
-texto:"Já conferiu as milhares demonstrativas da Vivi JB?"
-},
-{
-titulo:"🔥 DUQUE",
-texto:"Confira os duques disponíveis no painel de palpites!"
-},
-{
-titulo:"💯 CENTENA",
-texto:"Acesse o painel e veja as combinações atualizadas!"
-}
-];
-
-let indice=0;
-
-function mostrarNotificacao(){
-
-const caixa=document.getElementById("notificacao");
-
-document.getElementById("tituloNotificacao").textContent=
-mensagens[indice].titulo;
-
-document.getElementById("textoNotificacao").textContent=
-mensagens[indice].texto;
-
-caixa.style.display="block";
-
-indice=(indice+1)%mensagens.length;
-
-setTimeout(()=>{
-caixa.style.display="none";
-},7000);
-
-}
-
-setTimeout(mostrarNotificacao,5000);
-setInterval(mostrarNotificacao,30000);
+setInterval(atualizarContador, 1000);
 
 </script>
 
 </body>
 </html>
-```
